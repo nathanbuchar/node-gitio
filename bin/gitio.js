@@ -13,10 +13,14 @@ var yargs = require('yargs');
 
 var shrink = require('./commands/shrink');
 
+var version = require('../package').version;
+
 var argv = yargs
+  .version(version)
   .usage('Usage: gitio <command>')
   .command('shrink', 'Shrink a GitHub url', shrink)
   .demand(1)
+  .alias('v', 'version')
   .alias('h', 'help')
   .help('h')
   .wrap(74)

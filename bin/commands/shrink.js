@@ -21,11 +21,13 @@ module.exports = function (yargs) {
       c: {
         alias: 'code',
         description: 'A custom code for the short link, e.g. http://git.io/mycode',
+        demand: false,
         type: 'string'
       },
       f: {
         alias: 'force',
         description: 'Try to shorten link even if the custom code has been used previously.',
+        demand: false,
         type: 'boolean',
         default: false
       }
