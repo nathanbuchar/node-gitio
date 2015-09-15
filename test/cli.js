@@ -37,14 +37,6 @@ var stub = {
 };
 
 /**
- * Verify the command line tool exists before running tests.
- */
-if (!which('gitio')) {
-  echo('gitio must exist.');
-  exit(1);
-}
-
-/**
  * Our tests.
  */
 describe('CLI', function () {
