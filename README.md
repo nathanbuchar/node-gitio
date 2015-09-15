@@ -33,7 +33,6 @@ Options:
 #### Shrink
 
 ```
-
 Usage: gitio shrink <long url> [-c code] [-f]
 
 Options:
@@ -71,7 +70,7 @@ gitio.shrink(payload, function (err, result) {
 
  gitio.shrink(payload).then(function (result) {
    console.log(result);
- }).catch(function (err) {
+ }, function (err) {
    console.error(err);
  });
 ```

@@ -26,3 +26,5 @@ var argv = yargs
   .wrap(74)
   .epilogue('See http://git.io/vZ9RJ for more information.')
   .argv;
+
+module.exports = yargs;

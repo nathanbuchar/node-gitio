@@ -1,5 +1,7 @@
 test
 
 .editorconfig
-.jshintrc
+.gitignore
 .jscsrc
+.jshintrc
+.travis.yml
