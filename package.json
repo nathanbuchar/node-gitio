@@ -1,0 +1,31 @@
+{
+  "name": "node-gitio",
+  "version": "0.0.1",
+  "description": "A simple Node CLI wrapper for git.io.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git.io",
+    "gitio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanbuchar/gitio.git"
+  },
+  "author": "Nathan Buchar <hello@nathanbuchar.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathan/gitio/issues"
+  },
+  "dependencies": {
+    "extend": "^3.0.0",
+    "promise": "^7.0.4",
+    "request": "^2.61.0",
+    "yargs": "^3.25.0"
+  },
+  "bin": {
+    "gitio": "./bin/gitio.js"
+  }
+}
