@@ -12,12 +12,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathanbuchar/gitio.git"
+    "url": "https://github.com/nathanbuchar/node-gitio.git"
   },
   "author": "Nathan Buchar <hello@nathanbuchar.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nathan/gitio/issues"
+    "url": "https://github.com/nathanbuchar/node-gitio/issues"
   },
   "dependencies": {
     "chalk": "^1.1.1",
