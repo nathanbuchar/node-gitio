@@ -10,6 +10,9 @@
 
 'use strict';
 
+var chalk = require('chalk');
+var copyPaste = require('copy-paste');
+
 var shrink = require('../../lib/shrink');
 
 module.exports = function (yargs) {
@@ -44,8 +47,10 @@ module.exports = function (yargs) {
     code: argv.code,
     force: argv.force
   }).then(function (result) {
-    console.log('\n%s', result);
+    copyPaste.copy(result, function () {
+      console.log('\n%s %s', chalk.green(result), '(copied to clipboard)');
+    });
   }).catch(function (err) {
-    console.error('\n%s', err);
+    console.error(chalk.red('\n%s'), err);
   });
 };
