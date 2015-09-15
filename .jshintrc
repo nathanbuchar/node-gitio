@@ -1,7 +1,7 @@
 {
   "node": true,
   "eqeqeq": true,
-  "esnext": "true",
+  "esnext": "false",
   "indent": 2,
   "quotmark": "single"
 }
