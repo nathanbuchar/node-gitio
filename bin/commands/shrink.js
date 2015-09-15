@@ -48,7 +48,7 @@ module.exports = function (yargs) {
     force: argv.force
   }).then(function (result) {
     copyPaste.copy(result, function () {
-      console.log('\n%s %s', result, chalk.dim('(copied to clipboard)'));
+      console.log('\n%s  %s', result, chalk.dim('✔ copied to clipboard'));
     });
   }).catch(function (err) {
     console.error(chalk.red('\n%s'), err);

@@ -20,12 +20,12 @@ npm install -g node-gitio
 ```bash
 $ gitio shrink github.com/.../my_cool_package
 
-# => http://git.io/vZHUg (copied to clipboard)
+# => http://git.io/vZHUg  ✔ copied to clipboard
 
 
 $ gitio shrink github.com/.../my_cool_package -c mycoolpackage
 
-# => http://git.io/mycoolpackage (copied to clipboard)
+# => http://git.io/mycoolpackage  ✔ copied to clipboard
 ```
 
 
@@ -108,7 +108,7 @@ gitio.shrink(payload, function (err, result) {
   ```bash
   $ gitio shrink github.com/nathanbuchar/node-gitio
 
-  # => http://git.io/vZ9RJ (copied to clipboard)
+  # => http://git.io/vZ9RJ  ✔ copied to clipboard
   ```
 
 2. Shorten `github.com/nathanbuchar/node-gitio` and attempt to use `nathan-gitio` as the custom code (if available).
@@ -116,7 +116,7 @@ gitio.shrink(payload, function (err, result) {
   ```bash
   $ gitio shrink github.com/nathanbuchar/node-gitio -c nathan-gitio
 
-  # => http://git.io/nathan-gitio (copied to clipboard)
+  # => http://git.io/nathan-gitio  ✔ copied to clipboard
   ```
 
 3. Shorten `github.com/nathanbuchar/node-gitio` via Node JS and log the result.
