@@ -1,4 +1,4 @@
-# node-gitio
+# node-gitio [![Build Status](https://travis-ci.org/nathanbuchar/node-gitio.svg?branch=master)](https://travis-ci.org/nathanbuchar/node-gitio)
 
 A simple Node CLI wrapper for [git.io](https://github.com/blog/985-git-io-github-url-shortener). In Terminal, simply enter `gitio shrink` followed by the GitHub URL you would like to shrink and the shortened URL will be copied automatically to your clipboard.
 

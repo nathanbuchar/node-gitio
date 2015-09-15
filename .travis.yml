@@ -5,3 +5,6 @@ node_js:
   - "stable"
 before_script:
   - npm install -g mocha chai
+notifications:
+  email:
+    on_success: change
