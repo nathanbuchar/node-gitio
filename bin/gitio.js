@@ -17,7 +17,7 @@ var version = require('../package').version;
 
 var argv = yargs
   .version(version)
-  .usage('Usage: gitio <command>')
+  .usage('Usage: gitio [--version] [--help] <command> [<args>]')
   .command('shrink', 'Shrink a GitHub URL.', shrink)
   .demand(1)
   .alias('v', 'version')
