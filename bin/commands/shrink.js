@@ -18,7 +18,7 @@ var shrink = require('../../lib/shrink');
 module.exports = function (yargs) {
   var argv = yargs
     .reset()
-    .usage('Usage: gitio shrink <long url> [-c code] [-f]')
+    .usage('Usage: gitio shrink <long url> [-c code] [-f] [--help]')
     .demand(2)
     .options({
       c: {
