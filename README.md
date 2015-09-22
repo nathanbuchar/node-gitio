@@ -33,7 +33,7 @@ $ gitio shrink github.com/.../my_cool_package -c mycoolpackage
 ### Usage
 
 ```
-Usage: gitio <command> [options]
+Usage: gitio [--version] [--help] <command> [<args>]
 
 Commands:
 
@@ -49,7 +49,7 @@ Options:
 #### Shrink
 
 ```
-Usage: gitio shrink <long url> [-c code] [-f]
+Usage: gitio shrink <long url> [-c code] [-f] [--help]
 
 Options:
 
