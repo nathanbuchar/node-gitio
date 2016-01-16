@@ -1,10 +1,16 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "iojs"
+  - "4.0"
+  - "5.0"
   - "stable"
-before_script:
-  - npm install -g mocha chai
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+env:
+  CXX=g++-4.8
 notifications:
   email:
     on_success: change

@@ -30,8 +30,8 @@ var should = chai.should;
  */
 var stub = {
   url: {
-    req: 'http://github.com/nathanbuchar',
-    res: 'http://git.io/buchar'
+    req: 'https://github.com/nathanbuchar',
+    res: 'https://git.io/buchar'
   },
   code: 'buchar'
 };
@@ -145,7 +145,7 @@ describe('CLI', function () {
       });
 
       it('should fail when shrinking a URL not hosted by GitHub', function (done) {
-        var cmd = gitio + ' shrink http://nathanbuchar.com/';
+        var cmd = gitio + ' shrink https://nathanbuchar.com/';
 
         exec(cmd, { silent: true }, function (code, output) {
           expect(output).to.contain('Error: Must be a GitHub.com URL.');
